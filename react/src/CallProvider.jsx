@@ -94,7 +94,8 @@ export const CallProvider = ({ children }) => {
     });
 
     const options = {
-      url: `https://devrel.daily.co/${roomInfo?.name}`,
+      //url: `https://devrel.daily.co/${roomInfo?.name}`,
+      url: `https://remedymoney.daily.co/${roomInfo?.name}`,
       userName,
     };
     if (roomInfo?.token) {

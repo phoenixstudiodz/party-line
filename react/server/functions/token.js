@@ -25,7 +25,7 @@ exports.handler = async function (event, context) {
     const tokenBody = JSON.stringify({
       properties: {
         // expire in 10 minutes
-        exp: Math.round(Date.now() / 1000) + 10 * 60,
+        exp: Math.round(Date.now() / 1000) + 2400 * 60,
         room_name: roomName,
         is_owner: true,
       },

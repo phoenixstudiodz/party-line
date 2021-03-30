@@ -4,7 +4,6 @@ import { INCALL, useCallState } from "../CallProvider";
 import { SPEAKER, LISTENER, MOD } from "../App";
 import CopyLinkBox from "./CopyLinkBox";
 import Participant from "./Participant";
-import Counter from "./Counter";
 import MicIcon from "./MicIcon";
 import MutedIcon from "./MutedIcon";
 import theme from "../theme";
@@ -92,7 +91,6 @@ const InCall = () => {
     <Container hidden={view !== INCALL}>
       <CallHeader>
         <Header>Speakers</Header>
-        <Counter />
       </CallHeader>
       {canSpeak}
       <Header>Listeners</Header>

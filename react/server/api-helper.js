@@ -14,7 +14,6 @@ const api = axios.create({
 });
 
 exports.apiHelper = async (method, endpoint, body = {}) => {
-  console.log(methode,endpoint,body);
   try {
     const response = await api.request({
       url: endpoint,

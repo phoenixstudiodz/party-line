@@ -22,14 +22,6 @@ const AppContent = () => {
         </Header>
         {view === PREJOIN && <PreJoinRoom />}
         {view === INCALL && <InCall />}
-        <Link
-          center={view === INCALL}
-          href="https://docs.daily.co/docs/reference-docs"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn more about this demo
-        </Link>
       </Wrapper>
     </AppContainer>
   );
@@ -73,19 +65,6 @@ const Title = styled.h1`
   color: ${theme.colors.blueDark};
   margin: 4px 0;
   font-weight: 600;
-`;
-const Link = styled.a`
-  font-weight: 400;
-  font-size: ${theme.fontSize.base};
-  color: ${theme.colors.greyDark};
-  display: flex;
-  justify-content: center;
-  max-width: 400px;
-
-  @media only screen and (min-width: 768px) {
-    justify-content: ${(props) => (props.center ? "center" : "flex-start")};
-    max-width: ${(props) => (props.center ? "100%" : "400px")};
-  }
 `;
 
 export default App;

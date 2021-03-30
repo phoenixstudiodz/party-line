@@ -33,7 +33,7 @@ export const CallProvider = ({ children }) => {
   const createRoom = async (roomName) => {
     if (roomName) return roomName;
     const response = await fetch(
-      "https://partyline.daily.co/.netlify/functions/room",
+      "https://blissful-davinci-e03116.netlify.app/.netlify/functions/room",
       {
         method: "POST",
       }
@@ -48,7 +48,7 @@ export const CallProvider = ({ children }) => {
       setError("Eep! We could not create a token");
     }
     const response = await fetch(
-      "https://partyline.daily.co/.netlify/functions/token",
+      "https://blissful-davinci-e03116.netlify.app/.netlify/functions/token",
       {
         method: "POST",
         body: JSON.stringify({ properties: { room_name: roomName } }),
